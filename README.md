@@ -28,7 +28,8 @@ you can navigate to **http://localhost:8080** to see the ASP.NET Core Web App ru
 `docker tag asp-netcore rcdemoreg.azurecr.io/asp-netcore:v1`
 
 `docker push rcdemoreg.azurecr.io/asp-netcore:v1`
-/*
+
+`
 4b0ad09bf643: Pushed
 c9ec1f82e805: Pushed
 33e20f752cf0: Pushed
@@ -36,7 +37,7 @@ c9ec1f82e805: Pushed
 b19f476f8dd3: Pushed
 5128b7cb97a9: Pushing [====>                                              ]  3.829MB/41.33MB
 87c8a1d8f54f: Pushing [=========>                                         ]  13.04MB/69.23MB
-*/
+`
 
 ## List the Containers in the ACR
 `az acr repository list --name rcdemoreg --output table`
