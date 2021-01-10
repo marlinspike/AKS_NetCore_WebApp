@@ -1,0 +1,30 @@
+apiVersion: apps/v1 # for versions before 1.9.0 use apps/v1beta2
+kind: Deployment
+metadata:
+  name: asp-netcore-deployment
+spec:
+  selector:
+    matchLabels:
+      app: asp-netcore
+  replicas: 3 # tells deployment to run 3 pods matching the template
+  template:
+    metadata:
+      labels:
+        app: asp-netcore
+    spec:
+      containers:
+      - name: asp-netcore
+        image: rcdemoreg.azurecr.io/asp-netcore:v1
+        ports:
+        - containerPort: 80
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: asp-netcore
+spec:
+  type: LoadBalancer
+  ports:
+  - port: 80
+  selector:
+    app: asp-netcore
