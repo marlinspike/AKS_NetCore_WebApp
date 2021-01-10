@@ -1,6 +1,7 @@
 ﻿### Resources Needed
-- Azure Container Registry (called rcdemoreg in this example)
-- Azure Kubernetes Service cluster (called rcdemokluster in this example)
+- A resource group called *DemoAKS*, within which your resources will reside
+- Azure Container Registry (called *rcdemoreg* in this example)
+- Azure Kubernetes Service cluster (called *rcdemokluster* in this example)
 
 ### Create the Container Repository
 `az acr create --resource-group DemoAKS --name rcdemoreg --sku Basic`
