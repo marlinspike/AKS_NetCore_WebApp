@@ -25,9 +25,9 @@ you can navigate to **http://localhost:8080** to see the ASP.NET Core Web App ru
 
 
 ## Push an image to the Registry
-`docker tag asp-netcore rcdemoreg.azurecr.io/asp-netcore:v1
+`docker tag asp-netcore rcdemoreg.azurecr.io/asp-netcore:v1`
 
-docker push rcdemoreg.azurecr.io/asp-netcore:v1`
+`docker push rcdemoreg.azurecr.io/asp-netcore:v1`
 /*
 4b0ad09bf643: Pushed
 c9ec1f82e805: Pushed
